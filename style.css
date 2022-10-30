@@ -93,7 +93,6 @@ nav {
 
 section {
     display: flex;
-    justify-content: center;
     align-items: center;
     padding: 20px;
     gap: 30px;
@@ -134,6 +133,7 @@ section p {
 
     section {
         flex-direction: column;
+        justify-content: center;
         gap: 20px;
     }
 
