@@ -1,0 +1,223 @@
+html {box-sizing: border-box;}
+*, ::before, ::after {box-sizing: inherit;}
+
+body {
+    background-color: #FAFAFA;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: black;
+    margin: 0;
+}
+
+main {
+    margin: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.cestovatel1 {
+    width: 70%;
+    max-width: 425px;
+}
+
+header,
+header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 40px auto 10px auto;
+    text-align: center;
+}
+
+hr {
+    width: 60px;
+    border: 1px solid #407BFF;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.odkazy {
+    margin: 30px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.tlacitko {
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.dobrodruzstvi {
+    background-color: #407BFF;
+    color: white;
+}
+
+.naplaz {
+    background-color: #8B8B8B;
+    color: white;
+}
+
+.popis {
+    margin-bottom: 30px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+    background-color: white;
+    box-shadow: 0px 4px 6px #407BFF1F;
+    border-radius: 10px;
+}
+
+section img {
+    width: 45px;
+    max-width: 100%;
+}
+
+section p {
+    text-align: left;
+    font-size: 13px;
+    margin: 0;
+}
+
+/*-------------tablet----------*/
+@media screen and (min-width: 640px) {
+    main {
+        gap: 80px;
+    }
+
+    h1 {
+        margin-top: 30px;
+    }
+    
+    .odkazy {
+        flex-direction: row;
+    }
+
+    nav {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    section p {
+        text-align: center;
+    }
+
+    .uvod p {
+        margin: 0 100px;
+    }
+
+    .popis {
+        margin: 0 100px 40px 100px;
+    }
+
+
+}
+
+/*-------------PC----------*/
+@media screen and (min-width: 1100px) {
+    
+    main {
+        margin: 60px 80px;
+    }
+
+    header {
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .cestovatel1 {
+        order: 2;
+        flex-basis: calc(50% - 30px);
+        margin: 0 auto;
+    }
+
+    .uvod {
+        order: 1;
+        align-items: flex-start;
+        flex-basis: calc(50% - 30px);
+    }
+
+    h1 {
+        margin-left: 0;
+    }
+
+    hr {
+       margin-left: 0; 
+    }
+
+    .odkazy {
+        margin: 30px 0;
+    }
+
+    .office,
+    .onsite {
+        display: flex;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .office .sluzby {
+        order: 2;
+    }
+
+    .office nav {
+        order: 1;
+    }
+
+    .sluzby {
+        flex-basis: 44%;
+    }
+
+    nav {
+        flex-basis: 56%;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    h2,
+    .uvod p,
+    .sluzby p {
+        text-align: left;
+        margin: 0;
+    }
+}
